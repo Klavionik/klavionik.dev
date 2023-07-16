@@ -1,8 +1,15 @@
 ---
 import Feature from "./Feature.astro"
 
+interface FeatureI {
+  title: string
+  description: string
+  icon: string
+  items?: Array<string>
+}
+
 interface Props {
-  features: Array<Feature>
+  features: Array<FeatureI>
 }
 
 const { features } = Astro.props
