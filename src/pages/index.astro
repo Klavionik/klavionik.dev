@@ -1,0 +1,64 @@
+---
+import Features from "@components/Features.astro"
+import Hero from "@components/Hero.astro"
+import Layout from "@layouts/Layout.astro"
+import me from "assets/me.jpg"
+
+const features = [
+  {
+    title: "Инструменты",
+    description:
+      "Python, Django & Django REST Framework, Celery, PostgreSQL, Vue.js, Docker, Kubernetes.",
+    icon: "fa-solid:tools",
+  },
+  {
+    title: "Опыт",
+    description:
+      "Разработка веб-приложений и CLI-инструментов, оптимизация Python-кода и SQL-запросов," +
+      " поддержка облачной инфраструктуры, внедрение инструментов code quality и CI/CD, проведение собеседований и онбординга, код-ревью.",
+    icon: "fa-solid:briefcase",
+  },
+  {
+    title: "Open Source",
+    description: "Контрибутил фичи/баг-фиксы/документацию в:",
+    items: ["Starlette", "BlackSheep", "Bandit", "django-recurrence", "yamlfix", "isort"],
+    icon: "fa-solid:heart",
+  },
+  {
+    title: "Любимые книги",
+    description: "Читал и перечитывал:",
+    items: [
+      "Fluent Python",
+      "Architectural Patterns with Python",
+      "RESTful Web Services",
+      "Web Scalability for Startup Engineers",
+    ],
+    icon: "fa-solid:book-reader",
+  },
+]
+
+const actions = [
+  {
+    text: "Написать в Telegram",
+    link: "https://t.me/jediroman",
+    icon: "fa:paper-plane",
+    classes: "bg-sky-600 hover:bg-sky-700",
+  },
+  {
+    text: "Мой GitHub",
+    link: "https://github.com/Klavionik",
+    icon: "fa:github",
+  },
+]
+---
+
+<Layout>
+  <Hero
+    title="Привет, меня зовут Роман."
+    subtitle="Я бэкенд-разработчик со здоровым перфекционизмом и тягой к фронтенд-технологиям."
+    image={me}
+    imageAlt="Roman Vlasenko"
+    actions={actions}
+  />
+  <Features features={features} />
+</Layout>

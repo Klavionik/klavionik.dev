@@ -1,0 +1,20 @@
+---
+interface Props {
+  href: string
+  class?: string
+  [x: string]: any
+}
+
+const { href, class: classes, ...rest } = Astro.props
+---
+
+<a
+  href={href}
+  {...rest}
+  class:list={[
+    "bg-black text-white hover:bg-gray-800 border-2 border-transparent rounded text-center" +
+      " transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5",
+    classes,
+  ]}
+  ><slot />
+</a>

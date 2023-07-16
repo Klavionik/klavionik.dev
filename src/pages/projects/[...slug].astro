@@ -1,0 +1,70 @@
+---
+import { InferGetStaticPropsType } from "astro"
+import { getCollection } from "astro:content"
+import Layout from "@layouts/Layout.astro"
+import Container from "@components/Container.astro"
+import CategoryBadge from "@components/CategoryBadge.astro"
+import Prose from "../../components/Prose.astro"
+import LinkButton from "../../components/LinkButton.astro"
+import { Icon } from "astro-icon"
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects")
+  return projects.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }))
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { entry } = Astro.props as Props
+const { Content } = await entry.render()
+---
+
+<Layout title={entry.data.title}>
+  <div class="flex flex-col mx-auto max-w-3xl mt-14">
+    <CategoryBadge text={entry.data.category} />
+    <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight lg:leading-tight">
+      {entry.data.title}
+    </h1>
+    <div class="flex gap-2 items-center flex-wrap md:flex-nowrap">
+      <span class="text-gray-500 text-sm">Добавлен {entry.data.added.toLocaleDateString()}</span>
+      <span class="text-gray-400">•</span>
+      <div class="w-full md:w-auto flex flex-wrap gap-3">
+        {entry.data.tags.map((tag) => <span class="text-sm text-gray-500">#{tag}</span>)}
+      </div>
+    </div>
+    <img
+      src={entry.data.image.src}
+      alt={entry.data.imageAlt}
+      class="w-full rounded-md shadow-md mt-4"
+    />
+    <div class="flex flex-col sm:flex-row gap-3 mt-3">
+      {
+        entry.data.source && (
+          <LinkButton
+            class="flex gap-1 items-center justify-center"
+            target="_blank"
+            href={entry.data.source}
+          >
+            <Icon class="text-white w-5 h-5 mr-2" name="fa:github" />
+            Исходный код
+          </LinkButton>
+        )
+      }
+      {
+        entry.data.link && (
+          <LinkButton class="flex gap-1 items-center justify-center" href={entry.data.link}>
+            <Icon class="text-white w-5 h-5 mr-2" name="arrow-up-right-from-square" />
+            Открыть
+          </LinkButton>
+        )
+      }
+    </div>
+  </div>
+
+  <Prose>
+    <Content />
+  </Prose>
+</Layout>

@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "@layouts/Layout.astro"
+import ProjectCard from "@components/ProjectCard.astro"
+
+const entries = await getCollection("projects")
+entries.sort(function (a, b) {
+  return b.data.added.valueOf() - a.data.added.valueOf()
+})
+---
+
+<Layout title="Проекты">
+  <main class="mt-16">
+    <ul class="grid gap-16 max-w-4xl mx-auto">
+      {
+        entries.map(({ slug, data }) => (
+          <li>
+            <a href={`/projects/${slug}`}>
+              <ProjectCard
+                title={data.title}
+                image={data.image}
+                imageAlt={data.imageAlt}
+                category={data.category}
+                tags={data.tags}
+                description={data.description}
+                added={data.added}
+              />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>
