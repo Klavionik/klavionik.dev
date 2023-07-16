@@ -43,11 +43,7 @@ const { Content } = await entry.render()
     <div class="flex flex-col sm:flex-row gap-3 mt-3">
       {
         entry.data.source && (
-          <LinkButton
-            class="flex gap-1 items-center justify-center"
-            target="_blank"
-            href={entry.data.source}
-          >
+          <LinkButton class="flex gap-1 items-center justify-center" href={entry.data.source}>
             <Icon class="text-white w-5 h-5 mr-2" name="fa:github" />
             Исходный код
           </LinkButton>

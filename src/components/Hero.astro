@@ -19,11 +19,7 @@ const { title, subtitle, image, imageAlt, actions } = Astro.props
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       {
         actions.map(({ text, link, icon, classes }) => (
-          <LinkButton
-            href={link}
-            target="_blank"
-            class={`flex gap-1 items-center justify-center ${classes}`}
-          >
+          <LinkButton href={link} class={`flex gap-1 items-center justify-center ${classes}`}>
             {text}
             <Icon class="text-white w-5 h-5 ml-1" name={icon} />
           </LinkButton>
