@@ -2,10 +2,9 @@
 import { InferGetStaticPropsType } from "astro"
 import { getCollection } from "astro:content"
 import Layout from "@layouts/Layout.astro"
-import Container from "@components/Container.astro"
 import CategoryBadge from "@components/CategoryBadge.astro"
-import Prose from "../../components/Prose.astro"
-import LinkButton from "../../components/LinkButton.astro"
+import Prose from "@components/Prose.astro"
+import LinkButton from "@components/LinkButton.astro"
 import { Icon } from "astro-icon"
 
 export async function getStaticPaths() {
