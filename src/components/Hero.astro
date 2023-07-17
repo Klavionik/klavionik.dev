@@ -20,8 +20,8 @@ const { title, subtitle, image, imageAlt, actions } = Astro.props
       {
         actions.map(({ text, link, icon, classes }) => (
           <LinkButton href={link} class={`flex gap-1 items-center justify-center ${classes}`}>
+            <Icon class="text-white w-5 h-5 mr-2" name={icon} />
             {text}
-            <Icon class="text-white w-5 h-5 ml-1" name={icon} />
           </LinkButton>
         ))
       }
