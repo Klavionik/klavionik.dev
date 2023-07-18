@@ -7,7 +7,7 @@ imageAlt: Spotify Playlist Saver
 added: 2022-03-14
 tags: [fastapi, bulma, spotify]
 source: https://github.com/Klavionik/spotify-playlist-saver
-link: null
+link: https://playlist-saver.klavionik.dev
 ---
 
 Небольшой проект, который я сделал в дни перед уходом Spotify из России, чтобы 
