@@ -1,3 +1,4 @@
+import i18n from "astro-i18n"
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
@@ -7,6 +8,7 @@ export default defineConfig({
     assets: true
   },
   integrations: [
+    i18n(),
     tailwind()
   ],
 });

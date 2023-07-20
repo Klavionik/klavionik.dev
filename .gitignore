@@ -1,6 +1,7 @@
 dist/
 .output/
 .astro
+.astro-i18n
 node_modules/
 .env
 .env.production

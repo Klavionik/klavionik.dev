@@ -1,0 +1,30 @@
+{
+  "index": {
+    "hero": {
+      "title": "Привет, меня зовут Роман.",
+      "subtitle": "Я бэкенд-разработчик со здоровым перфекционизмом и тягой к фронтенд-технологиям."
+    },
+    "actions": {
+      "telegram": "Написать в Telegram",
+      "gh": "Мой GitHub"
+    },
+    "features": {
+      "tools": {
+        "title": "Инструменты",
+        "description": "Python, Django & Django REST Framework, Celery, PostgreSQL, Vue.js, Docker, Kubernetes."
+      },
+      "exp": {
+        "title": "Опыт",
+        "description": "Разработка веб-приложений и CLI-инструментов, оптимизация Python-кода и SQL-запросов, поддержка облачной инфраструктуры, внедрение инструментов code quality и CI/CD, проведение собеседований и онбординга, код-ревью."
+      },
+      "os": {
+        "title": "Open Source",
+        "description": "Контрибутил фичи/баг-фиксы/документацию в:"
+      },
+      "books": {
+        "title": "Любимые книги",
+        "description": "Читал и перечитывал:"
+      }
+    }
+  }
+}

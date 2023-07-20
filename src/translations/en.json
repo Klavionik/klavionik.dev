@@ -1,0 +1,30 @@
+{
+  "index": {
+    "hero": {
+      "title": "Hello, I'm Roman.",
+      "subtitle": "I'm a backend developer, perfectionist (but in a sane way), and probably an impostor frontend dev."
+    },
+    "actions": {
+      "telegram": "Reach me on Telegram",
+      "gh": "My GitHub"
+    },
+    "features": {
+      "tools": {
+        "title": "Tools",
+        "description": "Python, Django & Django REST Framework, Celery, PostgreSQL, Vue.js, Docker, Kubernetes."
+      },
+      "exp": {
+        "title": "Experience",
+        "description": "Web applications and CLI development, Python and SQL profiling and optimization, cloud infrastructure, CI/CD and code quality tools adoption, tech interview and onboarding, code review."
+      },
+      "os": {
+        "title": "Open Source",
+        "description": "Contributed features/bugfixes/docs to:"
+      },
+      "books": {
+        "title": "Favorite books",
+        "description": "These are the titles I read multiple times:"
+      }
+    }
+  }
+}
