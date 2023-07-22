@@ -1,3 +1,7 @@
+---
+import { t } from "astro-i18n"
+---
+
 <footer class="mt-24 mb-4">
-  <p class="text-center text-sm text-slate-500">© {new Date().getFullYear()} Роман Власенко</p>
+  <p class="text-center text-sm text-slate-500">© {new Date().getFullYear()} {t("author")}</p>
 </footer>
