@@ -6,14 +6,22 @@ import CategoryBadge from "@components/CategoryBadge.astro"
 import Prose from "@components/Prose.astro"
 import LinkButton from "@components/LinkButton.astro"
 import { Icon } from "astro-icon"
+import { createStaticPaths } from "astro-i18n"
 
-export async function getStaticPaths() {
+export const getStaticPaths = createStaticPaths(async ({ langCode }) => {
   const projects = await getCollection("projects")
-  return projects.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }))
-}
+  return projects.map((entry) => {
+    return {
+      params: {
+        slug: entry.slug.substring(3),
+        lang: langCode,
+      },
+      props: {
+        entry,
+      },
+    }
+  })
+}, import.meta.url)
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 

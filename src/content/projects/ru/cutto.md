@@ -2,7 +2,7 @@
 title: Cutto
 category: Веб-приложение
 description: Сервис для создания коротких ссылок с отслеживанием статистики переходов.
-image: ../../assets/cutto.png
+image: ../cutto.png
 imageAlt: Cutto
 added: 2023-03-25
 tags: [django, react, mantine]

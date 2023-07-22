@@ -2,8 +2,12 @@
 import { getCollection } from "astro:content"
 import Layout from "@layouts/Layout.astro"
 import ProjectCard from "@components/ProjectCard.astro"
+const lang = Astro.locals.lang
 
-const entries = await getCollection("projects")
+let entries = await getCollection("projects", (entry) => {
+  const entryLang = entry.slug.split("/")[0]
+  return entryLang === lang
+})
 entries.sort(function (a, b) {
   return b.data.added.valueOf() - a.data.added.valueOf()
 })
@@ -15,7 +19,7 @@ entries.sort(function (a, b) {
       {
         entries.map(({ slug, data }) => (
           <li>
-            <a href={`/projects/${slug}`}>
+            <a href={`/${lang}/projects/${slug.substring(3)}`}>
               <ProjectCard
                 title={data.title}
                 image={data.image}
