@@ -3,7 +3,9 @@ import Features from "@components/Features.astro"
 import Hero from "@components/Hero.astro"
 import Layout from "@layouts/Layout.astro"
 import me from "assets/me.jpg"
-import { t } from "astro-i18n"
+import { t, astroI18n } from "astro-i18n"
+
+astroI18n.init(Astro)
 
 const features = [
   {
