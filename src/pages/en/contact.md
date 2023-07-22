@@ -1,9 +1,7 @@
 ---
 layout: "@layouts/MarkdownPage.astro"
-title: Связаться
+title: Contact
 ---
 
-По любым интересующим вопросам мне можно [написать в Telegram](https://t.me/jediroman) или
-[отправить письмо](mailto:klavionik@gmail.com).
-
-Для работодателей у меня есть [профиль](https://career.habr.com/jediroman) на Хабр.Карьере.
+In case you have any questions, you can [reach me](https://t.me/jediroman) on Telegram or
+[email](mailto:klavionik@gmail.com) me.
