@@ -1,0 +1,11 @@
+---
+import Layout from "@layouts/Layout.astro"
+import Prose from "@components/Prose.astro"
+---
+
+<Layout title={Astro.props.frontmatter.title}>
+  <Prose>
+    <h1>{Astro.props.frontmatter.title}</h1>
+    <slot />
+  </Prose>
+</Layout>
