@@ -1,9 +1,10 @@
 ---
 import Layout from "@layouts/Layout.astro"
 import Prose from "@components/Prose.astro"
+import { t } from "astro-i18n"
 ---
 
-<Layout title="Обо мне">
+<Layout title={t("pageTitle.about")}>
   <Prose>
     <h1>Обо мне</h1>
     <p>
