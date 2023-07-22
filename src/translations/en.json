@@ -26,5 +26,12 @@
         "description": "These are the titles I read multiple times:"
       }
     }
-  }
+  },
+  "pageTitle": {
+    "index": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "author": "Roman Vlasenko"
 }

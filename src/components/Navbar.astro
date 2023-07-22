@@ -1,22 +1,23 @@
 ---
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar"
+import { t, l } from "astro-i18n"
 
 const pages = [
   {
-    title: "Главная",
-    path: "/",
+    title: t("pageTitle.index"),
+    path: l("/"),
   },
   {
-    title: "Обо мне",
-    path: "/about",
+    title: t("pageTitle.about"),
+    path: l("/about"),
   },
   {
-    title: "Проекты",
-    path: "/projects",
+    title: t("pageTitle.projects"),
+    path: l("/projects"),
   },
   {
-    title: "Связаться",
-    path: "/contact",
+    title: t("pageTitle.contact"),
+    path: l("/contact"),
   },
 ]
 
@@ -26,8 +27,8 @@ const path = new URL(Astro.request.url).pathname
 <header class="flex flex-col lg:flex-row justify-between items-center my-5">
   <Astronav>
     <div class="flex w-full lg:w-auto items-center justify-between">
-      <a href="/" class="text-md"
-        ><span class="font-bold text-slate-800">Роман Власенко</span> | <span class="text-slate-500"
+      <a href={l("/")} class="text-md"
+        ><span class="font-bold text-slate-800">{t("author")}</span> | <span class="text-slate-500"
           >Software Engineer</span
         >
       </a>
