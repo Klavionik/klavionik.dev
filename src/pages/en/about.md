@@ -1,20 +1,21 @@
 ---
 layout: "@layouts/MarkdownPage.astro"
-title: Обо мне
+title: About me
 ---
 
-Спасибо, что заглянули! Меня зовут Роман, мне 30 лет, я родился и большую часть жизни прожил в
-северном городе Сургуте, а сейчас живу в Москве и немалую часть своей жизни посвящаю
-программированию (а если точнее, веб-разработке и всему, что вокруг этого).
+Thanks for checking in! I'm Roman, 30 years old. I was born and spent most of my life 
+in the city of Surgut, now I live in Moscow and dedicate a decent amount of my time to 
+programming (mostly web development & stuff).
 
-У меня нет формального образования, я самоучка. Иногда это беспокоит меня, но потом я
-вспоминаю <a href="https://t.ly/iz7o">слова</a> Джеймса Беннета, одного из авторов фреймворка Django,
-и утешаюсь.
+I don't have a CS degree, I'm self-taught. Sometimes it bothers me, but then I recall
+what James Bennet, an author of Django framework once [said about that](https://t.ly/iz7o), 
+and it soothes me.
 
-Я с довольно большим энтузиазмом отношусь к разработке ПО. Для меня это и профессия, и
-увлечение. В свободное время я пробую интересные мне технологии, читаю статьи или книги,
-разрабатываю <a href="/projects">сайд-проекты</a> или работаю над Open Source. Всегда есть чем
-заняться. :)
+I'm pretty enthusiastic about software development. It's both my occupation and my 
+passion. In my spare time, I fiddle with tools and technologies, read blog 
+posts 
+or books, and do [side projects](/en/projects) or Open Source. There are always plenty 
+of things to do. :)
 
-Вне работы я увлекаюсь иностранными языками (хорошо владею английским и немецким), музыкой и
-музыкальными инструментами (играю на гитаре, мучаю синтезатор).
+Apart from work, I take interest in foreign languages (I speak fairly good English and 
+German), music, and musical instruments (I play guitar and synth).
