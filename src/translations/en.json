@@ -34,5 +34,10 @@
     "contact": "Contact"
   },
   "author": "Roman Vlasenko",
-  "404": "This page doesn't exist"
+  "404": "This page doesn't exist",
+  "projects": {
+    "added": "Added",
+    "source": "Source code",
+    "visit": "Visit"
+  }
 }

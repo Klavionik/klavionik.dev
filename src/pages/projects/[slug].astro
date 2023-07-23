@@ -7,7 +7,7 @@ import Prose from "@components/Prose.astro"
 import LinkButton from "@components/LinkButton.astro"
 import { Icon } from "astro-icon"
 import { getSlugWithoutLang } from "../../content/_utils"
-import { createStaticPaths, extractRouteLangCode } from "astro-i18n"
+import { createStaticPaths, t } from "astro-i18n"
 
 export const getStaticPaths = createStaticPaths(async ({ langCode }) => {
   const projects = await getCollection("projects", (entry) => entry.slug.startsWith(langCode))
@@ -36,7 +36,9 @@ const { Content } = await entry.render()
       {entry.data.title}
     </h1>
     <div class="flex gap-2 items-center flex-wrap md:flex-nowrap">
-      <span class="text-gray-500 text-sm">Добавлен {entry.data.added.toLocaleDateString()}</span>
+      <span class="text-gray-500 text-sm"
+        >{t("projects.added")} {entry.data.added.toLocaleDateString()}</span
+      >
       <span class="text-gray-400">•</span>
       <div class="w-full md:w-auto flex flex-wrap gap-3">
         {entry.data.tags.map((tag) => <span class="text-sm text-gray-500">#{tag}</span>)}
@@ -52,7 +54,7 @@ const { Content } = await entry.render()
         entry.data.source && (
           <LinkButton class="flex gap-1 items-center justify-center" href={entry.data.source}>
             <Icon class="text-white w-5 h-5 mr-2" name="fa:github" />
-            Исходный код
+            {t("projects.source")}
           </LinkButton>
         )
       }
@@ -60,7 +62,7 @@ const { Content } = await entry.render()
         entry.data.link && (
           <LinkButton class="flex gap-1 items-center justify-center" href={entry.data.link}>
             <Icon class="text-white w-5 h-5 mr-2" name="arrow-up-right-from-square" />
-            Открыть
+            {t("projects.visit")}
           </LinkButton>
         )
       }
