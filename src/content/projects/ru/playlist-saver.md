@@ -1,13 +1,14 @@
 ---
-title: Spotify Playlist Saver
-category: Web application
+title: Playlist Saver for Spotify
+category: Веб-приложение
 description: Сервис для скачивания своих плейлистов из Spotify в табличном формате.
-image: ../playlists.png
-imageAlt: Spotify Playlist Saver
+image: ../playlist-saver.png
+imageAlt: Playlist Saver for Spotify
 added: 2022-03-14
 tags: [fastapi, bulma, spotify]
-source: https://github.com/Klavionik/spotify-playlist-saver
+source: https://github.com/Klavionik/playlist-saver
 link: https://playlist-saver.klavionik.dev
+draft: true
 ---
 
 Небольшой проект, который я сделал в дни перед уходом Spotify из России, чтобы 
@@ -20,7 +21,7 @@ link: https://playlist-saver.klavionik.dev
 
 ## Фичи
 * Вход через аккаунт Spotify
-* Опциональный доступ к приватным и общим плейлистам
+* Доступ к приватным и общим плейлистам
 * Просмотр информации о своих плейлистах
 * Скачивание содержимого плейлиста в формате CSV.
 

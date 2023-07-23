@@ -1,7 +1,7 @@
 ---
 title: Cutto
 category: Web application
-description: Сервис для создания коротких ссылок с отслеживанием статистики переходов.
+description: A URL shortener with nice extra features.
 image: ../cutto.png
 imageAlt: Cutto
 added: 2023-03-25
@@ -10,20 +10,20 @@ source: https://github.com/Klavionik/cutto
 link: https://cutto.klavionik.dev
 ---
 
-Наверное, всем знакома концепция сокращателя ссылок - приложения, которое берет
-неприлично длинную ссылку и превращает ее в короткую и удобную для распространения. Этот
-проект - именно об этом, но без фатального недостатка. :)
+Everybody knows these URL shortening sites, which take a long ugly link and turn it 
+into a beautiful short one, that is convenient to share. This project does exactly that, 
+but it is invented here. :)
 
-## Фичи
+## Features
 
-- Создание коротких ссылок
-- Ограничение срока действия ссылок
-- Назначение пароля ссылке
-- Кастомный или сгенерированный алиас
-- История ссылок
-- Отслеживание статистики переходов
+- Create short links
+- Set expiration date for short links
+- Protect short links with a password
+- Use a custom link alias (or stick with pregenerated one)
+- Keep your short link history
+- Monitor clicks statistics
 
-## Технологии
+## Technologies
 
-Бэкенд: Django/Django REST Framework, Celery, PostgreSQL.  
-Фронтенд: React, Mantine.
+Backend: Django/Django REST Framework, Celery, PostgreSQL.  
+Frontend: React, Mantine.
