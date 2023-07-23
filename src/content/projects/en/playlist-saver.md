@@ -24,6 +24,6 @@ grant you access).
 * View your playlist summary
 * Download playlists content as CSV data
 
-## Technologies
+## Tools
 Backend: FastAPI.  
 Frontend: Jinja2, Bulma.

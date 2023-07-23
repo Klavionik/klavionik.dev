@@ -23,7 +23,7 @@ but it is invented here. :)
 - Keep your short link history
 - Monitor clicks statistics
 
-## Technologies
+## Tools
 
 Backend: Django/Django REST Framework, Celery, PostgreSQL.  
 Frontend: React, Mantine.

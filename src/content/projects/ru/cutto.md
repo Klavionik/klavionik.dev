@@ -23,7 +23,7 @@ link: https://cutto.klavionik.dev
 - История ссылок
 - Отслеживание статистики переходов
 
-## Технологии
+## Инструменты
 
 Бэкенд: Django/Django REST Framework, Celery, PostgreSQL.  
 Фронтенд: React, Mantine.
