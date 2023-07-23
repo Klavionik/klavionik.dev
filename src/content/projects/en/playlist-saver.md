@@ -10,12 +10,12 @@ source: https://github.com/Klavionik/playlist-saver
 link: https://playlist-saver.klavionik.dev
 ---
 
-A litle project I did a while ago to back up my precious playlists. One may use it the 
-same way or to perform some sort of analysis (like, how much Megadeth songs you've got 
+A little project I did a while ago to back up my precious playlists. One may use it the 
+same way or to perform some sort of analysis (like, how many Megadeth songs you've got 
 among your playlists?)
 
-Lately I've updated it and right now it awaits Spotify review. Until review is done, 
-the service is not publicly available (you won't be able to log in, unless I manually 
+Lately, I've updated it and right now it awaits Spotify review. Until the review is done, 
+the service is not publicly available (you won't be able to log in unless I manually 
 grant you access).
 
 ## Features

@@ -11,7 +11,7 @@ link: https://cutto.klavionik.dev
 ---
 
 Everybody knows these URL shortening sites, which take a long ugly link and turn it 
-into a beautiful short one, that is convenient to share. This project does exactly that, 
+into a beautiful short one, which is convenient to share. This project does exactly that, 
 but it is invented here. :)
 
 ## Features
@@ -19,7 +19,7 @@ but it is invented here. :)
 - Create short links
 - Set expiration date for short links
 - Protect short links with a password
-- Use a custom link alias (or stick with pregenerated one)
+- Use a custom link alias (or stick with a pregenerated one)
 - Keep your short link history
 - Monitor clicks statistics
 
