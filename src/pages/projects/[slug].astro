@@ -6,15 +6,15 @@ import CategoryBadge from "@components/CategoryBadge.astro"
 import Prose from "@components/Prose.astro"
 import LinkButton from "@components/LinkButton.astro"
 import { Icon } from "astro-icon"
-import { createStaticPaths } from "astro-i18n"
+import { getSlugWithoutLang } from "../../content/_utils"
+import { createStaticPaths, extractRouteLangCode } from "astro-i18n"
 
 export const getStaticPaths = createStaticPaths(async ({ langCode }) => {
-  const projects = await getCollection("projects")
+  const projects = await getCollection("projects", (entry) => entry.slug.startsWith(langCode))
   return projects.map((entry) => {
     return {
       params: {
-        slug: entry.slug.substring(3),
-        lang: langCode,
+        slug: getSlugWithoutLang(entry.slug),
       },
       props: {
         entry,

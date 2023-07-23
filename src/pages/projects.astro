@@ -2,8 +2,10 @@
 import { getCollection } from "astro:content"
 import Layout from "@layouts/Layout.astro"
 import ProjectCard from "@components/ProjectCard.astro"
-import { t } from "astro-i18n"
-const lang = Astro.locals.lang
+import { l, t, extractRouteLangCode } from "astro-i18n"
+import { getSlugWithoutLang } from "../content/_utils"
+
+const lang = extractRouteLangCode(Astro.request.url)
 
 let entries = await getCollection("projects", (entry) => {
   const entryLang = entry.slug.split("/")[0]
@@ -20,7 +22,7 @@ entries.sort(function (a, b) {
       {
         entries.map(({ slug, data }) => (
           <li>
-            <a href={`/${lang}/projects/${slug.substring(3)}`}>
+            <a href={l(`/projects/${getSlugWithoutLang(slug)}`)}>
               <ProjectCard
                 title={data.title}
                 image={data.image}
