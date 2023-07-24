@@ -5,7 +5,7 @@ import { t, l } from "astro-i18n"
 <footer class="mt-24 mb-4">
   <div class="flex flex-col text-center text-sm text-slate-500">
     <p>© {new Date().getFullYear()}&nbsp;{t("author")}</p>
-    <p>
+    <p class="font-bold">
       <a href={l(Astro.url.pathname, {}, "en")}>EN</a>
       |
       <a href={l(Astro.url.pathname, {}, "ru")}>RU</a>
