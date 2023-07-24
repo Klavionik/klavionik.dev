@@ -7,6 +7,7 @@ export default defineConfig({
   experimental: {
     assets: true
   },
+  trailingSlash: "always",
   integrations: [
     i18n(),
     tailwind()

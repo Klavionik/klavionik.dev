@@ -9,4 +9,5 @@ export default defineAstroI18nConfig({
     en: "src/translations/en.json",
   },
   routeTranslations: {},
+  trailingSlash: "always",
 })
