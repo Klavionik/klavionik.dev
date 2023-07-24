@@ -4,7 +4,7 @@ category: Веб-приложение
 description: Сервис для создания коротких ссылок с отслеживанием статистики переходов.
 image: ../cutto.png
 imageAlt: Cutto
-added: 2023-03-25
+year: 2023
 tags: [django, react, mantine]
 source: https://github.com/Klavionik/cutto
 link: https://cutto.klavionik.dev

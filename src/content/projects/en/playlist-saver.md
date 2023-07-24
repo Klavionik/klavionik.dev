@@ -4,7 +4,7 @@ category: Web application
 description: Save your Spotify playlists as CSV data.
 image: ../playlist-saver.png
 imageAlt: Playlist Saver for Spotify
-added: 2022-03-14
+year: 2022
 tags: [fastapi, bulma, spotify]
 source: https://github.com/Klavionik/playlist-saver
 link: https://playlist-saver.klavionik.dev

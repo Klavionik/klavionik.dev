@@ -7,7 +7,7 @@ export const projectsCollection = defineCollection({
       title: z.string(),
       category: z.string(),
       description: z.string(),
-      added: z.date(),
+      year: z.number(),
       image: image(),
       imageAlt: z.string(),
       tags: z.array(z.string()),

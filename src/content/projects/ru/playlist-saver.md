@@ -4,7 +4,7 @@ category: Веб-приложение
 description: Сервис для скачивания своих плейлистов из Spotify в табличном формате.
 image: ../playlist-saver.png
 imageAlt: Playlist Saver for Spotify
-added: 2022-03-14
+year: 2022
 tags: [fastapi, bulma, spotify]
 source: https://github.com/Klavionik/playlist-saver
 link: https://playlist-saver.klavionik.dev

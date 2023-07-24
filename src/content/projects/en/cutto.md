@@ -4,7 +4,7 @@ category: Web application
 description: A URL shortener with nice extra features.
 image: ../cutto.png
 imageAlt: Cutto
-added: 2023-03-25
+year: 2023
 tags: [django, react, mantine]
 source: https://github.com/Klavionik/cutto
 link: https://cutto.klavionik.dev

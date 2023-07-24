@@ -11,9 +11,7 @@ let entries = await getCollection("projects", (entry) => {
   const entryLang = entry.slug.split("/")[0]
   return entryLang === lang
 })
-entries.sort(function (a, b) {
-  return b.data.added.valueOf() - a.data.added.valueOf()
-})
+entries.sort((a, b) => b.data.year - a.data.year)
 ---
 
 <Layout title={t("pageTitle.projects")}>
@@ -30,7 +28,7 @@ entries.sort(function (a, b) {
                 category={data.category}
                 tags={data.tags}
                 description={data.description}
-                added={data.added}
+                year={data.year}
               />
             </a>
           </li>

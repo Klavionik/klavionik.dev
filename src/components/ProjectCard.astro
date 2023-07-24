@@ -10,10 +10,10 @@ export interface Props {
   title: string
   description: string
   tags: string[]
-  added: Date
+  year: number
 }
 
-const { category, image, imageAlt, title, description, tags, added } = Astro.props
+const { category, image, imageAlt, title, description, tags, year } = Astro.props
 ---
 
 <div
@@ -23,17 +23,13 @@ const { category, image, imageAlt, title, description, tags, added } = Astro.pro
   <div class="flex flex-col">
     <CategoryBadge text={category} />
     <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1">
-      {title}
+      {title}&nbsp;<span class="text-sm">({year})</span>
     </h2>
 
     <p class="text-slate-500 mt-1">{description}</p>
 
     <div class="flex gap-2 mt-3 text-gray-400 text-sm">
       {tags.map((tag) => <span>#{tag}</span>)}
-    </div>
-
-    <div class="text-gray-400 mt-2 text-sm">
-      {t("projects.added")}&nbsp;{added.toLocaleDateString()}
     </div>
   </div>
 </div>
