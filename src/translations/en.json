@@ -13,6 +13,10 @@
         "title": "Tools",
         "description": "Python, Django & Django REST Framework, Celery, PostgreSQL, Vue.js, Docker, Kubernetes."
       },
+      "practices": {
+        "title": "Practices",
+        "description": "RESTful API, web application architecture & security, OOP patterns, containerization, GitOps - an incomplete list of ideas and practices I'm familiar with."
+      },
       "exp": {
         "title": "Experience",
         "description": "Web applications and CLI development, Python and SQL profiling and optimization, cloud infrastructure, CI/CD and code quality tools adoption, tech interview and onboarding, code review."

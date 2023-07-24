@@ -13,6 +13,10 @@
         "title": "Инструменты",
         "description": "Python, Django & Django REST Framework, Celery, PostgreSQL, Vue.js, Docker, Kubernetes."
       },
+      "practices": {
+        "title": "Практики",
+        "description": "RESTful API, архитектура и безопасность приложений, паттерны ООП, контейнеризация, GitOps - неполный список идей и практик, о которых я имею хорошее представление."
+      },
       "exp": {
         "title": "Опыт",
         "description": "Разработка веб-приложений и CLI-инструментов, оптимизация Python-кода и SQL-запросов, поддержка облачной инфраструктуры, внедрение инструментов code quality и CI/CD, проведение собеседований и онбординга, код-ревью."
