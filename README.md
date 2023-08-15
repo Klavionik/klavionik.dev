@@ -8,6 +8,3 @@ cd klavionik.dev
 npm ci
 npm run dev
 ```
-
-## Деплой
-Деплоится с помощью Netlify.
