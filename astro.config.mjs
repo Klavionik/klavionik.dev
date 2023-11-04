@@ -4,9 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://klavionik.dev",
-  experimental: {
-    assets: true
-  },
   compressHTML: true,
   trailingSlash: "always",
   integrations: [
