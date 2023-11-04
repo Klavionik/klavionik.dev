@@ -8,6 +8,7 @@ year: 2023
 tags: [django, vuejs, typescript, bulma]
 source: https://github.com/Klavionik/bacon
 link: https://bacon.klavionik.dev
+order: 4
 ---
 
 Проект-долгострой, который начался с желания покупать чипсы за более дешевые деньги и 

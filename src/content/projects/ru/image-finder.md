@@ -8,6 +8,7 @@ year: 2021
 tags: [python]
 source: https://github.com/Klavionik/image-finder
 link: null
+order: 0
 ---
 
 Однажды зимой мне понадобилось найти одну фотографию, которая лежала где-то 

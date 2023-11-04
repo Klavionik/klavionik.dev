@@ -8,6 +8,7 @@ year: 2023
 tags: [django, react, mantine]
 source: https://github.com/Klavionik/cutto
 link: https://cutto.klavionik.dev
+order: 2
 ---
 
 Наверное, всем знакома концепция сокращателя ссылок — приложения, которое берет

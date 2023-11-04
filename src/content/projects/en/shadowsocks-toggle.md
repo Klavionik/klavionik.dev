@@ -8,6 +8,7 @@ year: 2023
 tags: [shadowsocks, javscript, gtk, cinnamon]
 source: https://github.com/Klavionik/shadowsocks-switch
 link: https://cinnamon-spices.linuxmint.com/applets/view/379
+order: 3
 ---
 
 A simple and convenient Shadowsocks switch that lives in the system tray. Implemented 

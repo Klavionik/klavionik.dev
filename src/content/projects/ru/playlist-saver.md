@@ -9,6 +9,7 @@ tags: [fastapi, bulma, spotify]
 source: https://github.com/Klavionik/playlist-saver
 link: https://playlist-saver.klavionik.dev
 draft: true
+order: 1
 ---
 
 Небольшой проект, который я сделал в дни перед уходом Spotify из России, чтобы 

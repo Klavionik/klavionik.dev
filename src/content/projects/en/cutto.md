@@ -8,6 +8,7 @@ year: 2023
 tags: [django, react, mantine]
 source: https://github.com/Klavionik/cutto
 link: https://cutto.klavionik.dev
+order: 2
 ---
 
 Everybody knows these URL shortening sites, which take a long ugly link and turn it 

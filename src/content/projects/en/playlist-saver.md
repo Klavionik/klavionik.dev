@@ -8,6 +8,7 @@ year: 2022
 tags: [fastapi, bulma, spotify]
 source: https://github.com/Klavionik/playlist-saver
 link: https://playlist-saver.klavionik.dev
+order: 1
 ---
 
 A little project I did a while ago to back up my precious playlists. One may use it the 

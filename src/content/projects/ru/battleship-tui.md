@@ -8,6 +8,7 @@ year: 2023
 tags: [textual, blacksheep, websockets]
 source: https://github.com/Klavionik/battleship-tui
 link: null
+order: 5
 ---
 
 Мне очень нравятся всевозможные CLI и приложения для терминала, это факт. Последние пару 

@@ -13,6 +13,7 @@ export const projectsCollection = defineCollection({
       tags: z.array(z.string()),
       link: z.string().nullable(),
       source: z.string(),
+      order: z.number(),
     }),
 })
 
