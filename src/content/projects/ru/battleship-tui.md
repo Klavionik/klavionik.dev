@@ -25,5 +25,5 @@ order: 5
 
 ## Инструменты
 
-Бэкенд: Blacksheep, websockets.  
+Бэкенд: Blacksheep.  
 Фронтенд: Textual.
