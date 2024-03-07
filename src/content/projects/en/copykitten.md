@@ -1,7 +1,7 @@
 ---
 title: copykitten
 category: Library
-description: Multiplatform dependencies-free clipboard library.
+description: Multiplatform dependency-free clipboard library.
 image: ../copykitten.png
 imageAlt: copykitten
 year: 2024
