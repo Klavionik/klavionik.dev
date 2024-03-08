@@ -11,7 +11,7 @@ link: https://pypi.org/project/copykitten/
 order: 6
 ---
 
-A modern convenient alternative to the existing clipboard libraries. It doesn't require any external dependencies
+A convenient modern alternative to the existing clipboard libraries. It doesn't require any external dependencies
 like `xclip` or Qt to operate. The secret is Rust, of course. :) `copykitten` utilizes Rust's `arboard`, but wraps it 
 with a simpler API.
 
