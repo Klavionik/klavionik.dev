@@ -15,9 +15,8 @@ A little project I did a while ago to back up my precious playlists. One may use
 same way or to perform some sort of analysis (like, how many Megadeth songs you've got 
 among your playlists?).
 
-Lately, I've updated it and right now it awaits Spotify review. Until the review is done, 
-the service is not publicly available (you won't be able to log in unless I manually 
-grant you access).
+Sadly, it won't receive an approval from Spotify due to the nature of the project. That means that you won't be able to 
+log in unless I manually grant you access.
 
 ## Features
 * Login via Spotify
