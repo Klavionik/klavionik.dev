@@ -1,7 +1,7 @@
 # klavionik.dev
-Лендинг/резюме/портфолио. Статический сайт на Astro + Tailwind CSS.
+My personal page made with Astro and Tailwind CSS. Hosted via Cloudflare.
 
-## Разработка
+## Development (what if I forget?)
 ```bash
 git clone git@github.com:Klavionik/klavionik.dev.git
 cd klavionik.dev
