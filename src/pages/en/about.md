@@ -3,7 +3,7 @@ layout: "@layouts/MarkdownPage.astro"
 title: About me
 ---
 
-Thanks for stopping by! I'm Roman, 30 years old. I was born and spent most of my life 
+Thanks for stopping by! I'm Roman, 31 years old. I was born and spent most of my life 
 in the city of Surgut, now I live in Moscow and dedicate a decent amount of my time to 
 programming (mostly web development & stuff).
 
